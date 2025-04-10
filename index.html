@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Заметки - Офлайн приложение</title>
+  <meta name="description" content="Простое приложение для управления заметками с офлайн-режимом">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon1.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon2.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Заметки">
+</head>
+<body>
+  <div class="container">
+    <h1>Заметки</h1>
+    
+    <div id="offline-indicator" class="offline-indicator hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <span>Офлайн-режим. Изменения будут сохранены локально.</span>
+    </div>
+    
+    <form id="note-form" class="note-form">
+      <textarea id="note-input" placeholder="Введите текст заметки..." required></textarea>
+      <button type="submit" id="add-note-btn">Добавить</button>
+    </form>
+    
+    <div id="notes-container" class="notes-container">
+      <!-- Notes will be added here dynamically -->
+    </div>
+    
+    <!-- Edit Note Modal -->
+    <div id="edit-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Редактировать заметку</h2>
+        <textarea id="edit-note-input"></textarea>
+        <div class="modal-buttons">
+          <button id="cancel-edit-btn" type="button">Отмена</button>
+          <button id="save-edit-btn" type="button">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

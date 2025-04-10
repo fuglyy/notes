@@ -1,0 +1,22 @@
+{
+    "name": "Заметки - Офлайн приложение",
+    "short_name": "Заметки",
+    "description": "Простое приложение для управления заметками с офлайн-режимом",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "./icons/icon1.png",
+        "sizes": "320x320",
+        "type": "image/png"
+      },
+      {
+        "src": "./icons/icon2.png",
+        "sizes": "320x320",
+        "type": "image/png"
+      }
+    ]
+  }
+  
