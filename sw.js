@@ -1,10 +1,10 @@
 const CACHE_NAME = "notes-app-v1"
 const urlsToCache = [
   "/",
-  "/index.html",
-  "/styles.css",
-  "/app.js",
-  "/manifest.json",
+  "/notes/index.html",
+  "/notes/styles.css",
+  "/notes/app.js",
+  "/notes/manifest.json",
   "./icons/icon1.png",
   "./icons/icon2.png"
 ]
