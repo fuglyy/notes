@@ -1,12 +1,12 @@
 const CACHE_NAME = "notes-app-v1"
 const urlsToCache = [
-  "/",
+  "/notes/",
   "/notes/index.html",
   "/notes/styles.css",
   "/notes/app.js",
   "/notes/manifest.json",
-  "./icons/icon1.png",
-  "./icons/icon2.png"
+  "notes/icons/icon1.png",
+  "notes/icons/icon2.png"
 ]
 
 // Install service worker and cache static assets
