@@ -5,8 +5,8 @@ const urlsToCache = [
   "/notes/styles.css",
   "/notes/app.js",
   "/notes/manifest.json",
-  "notes/icons/icon1.png",
-  "notes/icons/icon2.png"
+  "/notes/icons/icon1.png",
+  "/notes/icons/icon2.png"
 ]
 
 // Install service worker and cache static assets
